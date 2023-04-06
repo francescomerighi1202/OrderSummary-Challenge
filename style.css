@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desatured-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --p-fs: 16px;
+    --ff: 'Red Hat Display', sans-serif;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: var(--ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale-blue);
+}
+
+.order__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+    max-width: 400px;
+    width: 90%;
+}
+
+.order__image {
+    background-image: url(/images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.order__info {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.order__title {
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: var(--fw-900);
+    margin-top: 1em;
+}
+
+.order__desc {
+    max-width: 300px;
+    width: 90%;
+    margin-top: 1em;
+    text-align: center;
+    color: var(--desatured-blue);
+}
+
+.subscription {
+    margin-top: 1em;
+    display: flex;
+    max-width: 300px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+}
+
+.price {
+    color: var(--desatured-blue);
+}
+
+.plan {
+    color: var(--dark-blue);
+    font-weight: var(--fw-900);
+}
+
+.change__sub {
+    text-decoration: underline;
+    color: var(--bright-blue);
+}
+
+.change__sub:hover {
+    text-decoration: none;
+    color: var(--desatured-blue);
+}
+
+.proceed {
+    margin-top: 2em;
+    background-color: var(--bright-blue);
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    max-width: 325px;
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: var(--fw-700);
+}
+
+.proceed:hover {
+    opacity: .65;
+}
+
+.cancel {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    text-decoration: none;
+    color: var(--desatured-blue);
+    font-weight: var(--fw-700);
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
+}
