@@ -47,6 +47,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 
 .order__info {
@@ -55,6 +56,7 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 
 .order__title {
@@ -114,6 +116,8 @@ body {
     text-align: center;
     border-radius: 10px;
     font-weight: var(--fw-700);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+
 }
 
 .proceed:hover {
